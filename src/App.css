@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    padding: 20px;
+    width: 100%;
+    min-height: 100px;
+    background-color: #666;
+    font-size: 45px;
+    text-align: center;
+    color: wheat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 600px;
+    height: 400px;
+    border: 5px solid #666;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.display {
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.display-counter {
+    color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+    margin: 30px 10px;
+    padding: 20px 15px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+}
+
+.step-input {
+    margin: 0 10px;
+    width: 100px;
+    height: 25px;
 }
